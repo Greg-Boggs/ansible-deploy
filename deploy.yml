@@ -1,0 +1,10 @@
+---
+- name: Deploy example app to localhost
+  hosts: all
+  vars:
+    ansistrano_deploy_from: "{{ playbook_dir }}/../html"
+    ansistrano_deploy_to: "/var/www/"
+    ansistrano_keep_releases: 3
+    ansistrano_deploy_via: rsync
+  roles:
+    - { role: carlosbuenosvinos.ansistrano-deploy }
