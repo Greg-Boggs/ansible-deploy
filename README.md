@@ -1,4 +1,6 @@
-To use just git clone a project to the HTML folder 1 level above this README.
+This Anistrano Deploy script for [Ansible-Hosting](https://github.com/Greg-Boggs/ansible-hosting).
+
+To use this playbook outside of my Ansible Hosting environment just git clone a project to a www folder 1 level above this README.
 
     ansible-playbook -i hosts deploy.yml
 
